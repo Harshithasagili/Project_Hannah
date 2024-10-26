@@ -42,7 +42,7 @@ Make sure you have the following installed on your system:
    In your terminal, run the following command:
    ```bash
    git clone https://github.com/Harshithasagili/Project_Hannah.git
-   cd project-listing-app
+
 ## **Install Dependencies**  
 Install the required Node.js packages by running:
 
