@@ -1,4 +1,5 @@
 <!-- public/index.html -->
+<!-- public/index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,8 +10,73 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <style>
+      /* Body Background with Gradient */
+      body {
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+        min-height: 100vh;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      /* Container Styling */
+      #root {
+        padding: 20px;
+      }
+
+      /* Header Styling */
+      .custom-header {
+        background-color: #3c1053; /* Deep purple */
+        color: #e0aaff; /* Lavender text */
+        text-align: center;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Button Styling */
+      .btn-custom {
+        background: linear-gradient(90deg, #0ef1f1, #fcb045); /* Neon gradient */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        transition: transform 0.2s;
+      }
+
+      .btn-custom:hover {
+        transform: scale(1.1); /* Button enlarges slightly on hover */
+      }
+
+      /* Text and Link Styling */
+      .custom-text {
+        color: #ff4081; /* Vibrant pink */
+      }
+
+      a {
+        color: #0ef1f1; /* Neon cyan */
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      a:hover {
+        color: #fcb045; /* Bright yellow-orange on hover */
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="custom-header">
+        <h1>Welcome to the Product Listing App</h1>
+      </div>
+      <div class="text-center">
+        <p class="custom-text">
+          Discover amazing products and shop with the best deals!
+        </p>
+        <a href="#" class="btn btn-custom">Explore Products</a>
+      </div>
+    </div>
   </body>
 </html>
+
