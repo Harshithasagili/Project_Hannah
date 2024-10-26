@@ -15,14 +15,7 @@ Make sure you have the following installed on your system:
 
 ## **PostgreSQL Database Setup**
 
-1. **Create a PostgreSQL Database:**
-   - Open **pgAdmin** or connect to PostgreSQL via the terminal.
-   - Run the following SQL command to create the `product_listing` database:
-     ```sql
-     CREATE DATABASE product_listing;
-     ```
-
-2. **Update Database Credentials in `server.js`:**
+1. **Update Database Credentials in `server.js`:**
    - Open the `server.js` file and modify the `Pool` configuration with your PostgreSQL credentials:
      ```javascript
      const pool = new Pool({
