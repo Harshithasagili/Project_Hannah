@@ -14,11 +14,11 @@ app.use(bodyParser.json());  // Parses incoming JSON data
 
 // PostgreSQL Pool (Connect to your mahathigarapati database)
 const pool = new Pool({
-  user: process.env.DB_USER || 'postgres',       // PostgreSQL username
-  host: process.env.DB_HOST || 'localhost',      // Hostname (use 'localhost' for local connections)
-  database: process.env.DB_NAME || 'postgres',  // Database name
-  password: process.env.DB_PASSWORD || 'Sandra',   // Password
-  port: process.env.DB_PORT || 5433,             // PostgreSQL port
+  user:  'postgres',       // PostgreSQL username
+  host:  'localhost',      // Hostname (use 'localhost' for local connections)
+  database:  'postgres',  // Database name
+  password:  'Sandra',   // Password
+  port:  5433,             // PostgreSQL port
 });
 // Function to initialize the database
 const initializeDatabase = async () => {
